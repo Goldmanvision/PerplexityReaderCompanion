@@ -1,0 +1,8 @@
+*.exe
+*.log
+*.dll
+*.pdb
+bin/
+obj/
+_backups/
+Thumbs.db

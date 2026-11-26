@@ -1,0 +1,31 @@
+{
+    "manifest_version":  3,
+    "name":  "Perplexity Reader Companion - Inspector",
+    "version":  "0.1.1",
+    "description":  "Automatically displays a local structural inspector on Perplexity pages.",
+    "permissions":  [
+                        "activeTab",
+                        "scripting",
+                        "clipboardWrite",
+                        "nativeMessaging"
+                    ],
+    "action":  {
+                   "default_title":  "Inspect Perplexity reader structure"
+               },
+    "background":  {
+                       "service_worker":  "background.js"
+                   },
+    "content_scripts":  [
+                            {
+                                "matches":  [
+                                                "https://perplexity.ai/*",
+                                                "https://www.perplexity.ai/*"
+                                            ],
+                                "js":  [
+                                           "inspect.js"
+                                       ],
+                                "run_at":  "document_idle",
+                                "all_frames":  false
+                            }
+                        ]
+}

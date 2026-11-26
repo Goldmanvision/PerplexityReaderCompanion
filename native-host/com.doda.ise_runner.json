@@ -1,0 +1,9 @@
+{
+    "name":  "com.doda.ise_runner",
+    "description":  "DoDA ISE runner for the Perplexity Reader Companion",
+    "path":  "E:\\Dev\\PerplexityReaderCompanion\\native-host\\DoDAIseRunnerHost.exe",
+    "type":  "stdio",
+    "allowed_origins":  [
+                            "chrome-extension://akapcolhkcjmdpimnkfbmpchmaeiipch/"
+                        ]
+}
